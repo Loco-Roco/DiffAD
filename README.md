@@ -27,7 +27,17 @@ Following DRAEM, we use the MVTec-AD and DTD dataset. You can run the download_d
 ```
 
 ## Training
-
+### Reconstruction sub-network
+The reconstrucion sub-network is based on latent diffusion model. 
+#### Training Auto-encoder
+```
+cd rec_network
+CUDA_VISIBLE_DEVICES=<GPU_ID> python main.py --base configs/kl.yaml -t --gpus 0,  
+```
+#### Training LDMs
+```
+CUDA_VISIBLE_DEVICES=<GPU_ID> python main.py --base configs/mvtec.yaml -t --gpus 0 --max_epochs 4000, 
+```
 
 
 
