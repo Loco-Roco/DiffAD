@@ -51,6 +51,7 @@ After training the reconstruction sub-network, you can test the reconstruction p
 ```
 python scripts/mvtec.py
 ```
+For some samples with severe deformations, such as missing transistors, you can add some noise to the anomalous conditions to adjust the sampling. 
 
 ### Anomaly segmentation
 ```
