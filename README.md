@@ -36,7 +36,7 @@ CUDA_VISIBLE_DEVICES=<GPU_ID> python main.py --base configs/kl.yaml -t --gpus 0,
 ```
 #### Training LDMs
 ```
-CUDA_VISIBLE_DEVICES=<GPU_ID> python main.py --base configs/mvtec.yaml -t --gpus 0 --max_epochs 4000, 
+CUDA_VISIBLE_DEVICES=<GPU_ID> python main.py --base configs/mvtec.yaml -t --gpus 0 -max_epochs 4000, 
 ```
 
 ### Discriminative sub-network
