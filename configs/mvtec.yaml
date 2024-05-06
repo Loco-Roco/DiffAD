@@ -2,6 +2,7 @@ model:
   base_learning_rate: 2.0e-06
   target: rec_network.models.diffusion.ddpm.LatentDiffusion
   params:
+    #ckpt_path:  modify the ckpt_path of rec_network when training the seg_network
     linear_start: 0.0015
     linear_end: 0.02
     num_timesteps_cond: 1
